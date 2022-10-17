@@ -1,39 +1,40 @@
 .container {
-    border: 2px solid black;
-    width: 50%;
-    margin: 20px;
-    padding: 20px;
-    overflow: scroll;
+  border: 2px solid black;
+  width: 50%;
+  margin: 20px;
+  padding: 20px;
+  overflow: scroll;
 }
 
 .container_main {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .score {
-    border: 2px solid black;
+  border: 2px solid black;
 }
 
 li:nth-child(even) {
-    background-color: #fff;
-  }
+  background-color: #fff;
+}
   
 li:nth-child(odd) {
-    background-color: #eee;
-  }
+  background-color: #eee;
+}
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    
+  list-style: none;
+  margin: 0;
+  padding: 0;  
 }
+
+/* End */
