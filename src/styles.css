@@ -26,7 +26,7 @@
 li:nth-child(even) {
   background-color: #fff;
 }
-  
+
 li:nth-child(odd) {
   background-color: #eee;
 }
@@ -34,7 +34,7 @@ li:nth-child(odd) {
 ul {
   list-style: none;
   margin: 0;
-  padding: 0;  
+  padding: 0;
 }
 
 /* End */
