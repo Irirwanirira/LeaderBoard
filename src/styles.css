@@ -35,6 +35,11 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  background-color: blue;
+}
+
+li p {
+  background-color: aqua;
 }
 
 /* End */
