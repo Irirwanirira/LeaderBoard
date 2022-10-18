@@ -18,19 +18,12 @@
             <div class="container_main">
                 <div class="recent_score_part">
                     <div class="title">
-                        <h2>Recetnt scores</h2>
-                        <p>refresh</p>
+                        <h2>Recent scores</h2>
+                        <button  type="button" class="refresh" >refresh</button>
                     </div>
                     <div class="score">
-                        <ul>
-                            <li>Name: 100</li>
-                            <li>Name: 20</li>
-                            <li>Name: 50</li>
-                            <li>Name: 78</li>
-                            <li>Name: 125</li>
-                            <li>Name: 77</li>
-                            <li>Name: 42</li>
-                            <li>Name: 42</li>
+                        <ul id="list_of_players">
+                            <!-- dynamic part -->
                         </ul>
                     </div>
                 </div>
@@ -38,10 +31,11 @@
                    <div class="title_form">
                     <h2>Add your score</h2>
                    </div>
-                   <form action="submit">
-                    <input type="text",class = 'your_score', required, placeholder="your name"> <br><br>
-                    <input type="text",class = 'your_score', required, placeholder="your score"><br><br>
+                   <form>
+                    <input type="text" class = 'your_score'  required  placeholder="your name" name="name"> <br><br>
+                    <input type="number" class = 'your_score'  required  placeholder="your score" name="score"><br><br>
                     <button type = 'submit' class="submit_btn">submit</button>
+                    <p class="message"></p>
                    </form>
                 </div>
             </div>
