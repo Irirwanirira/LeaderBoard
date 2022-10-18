@@ -13,7 +13,7 @@ body {
 #leader_board {
   color: yellow;
   font-size: 50px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif
 }
 
 .container_main {
@@ -32,7 +32,7 @@ body {
 .title h2 {
   color: antiquewhite;
   font-size: 30px;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
 }
 
 .refresh {
