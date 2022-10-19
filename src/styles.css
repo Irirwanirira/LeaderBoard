@@ -1,15 +1,25 @@
+body {
+  background-image: url(/images/KigaliCityTour.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .container {
-  border: 2px solid black;
-  width: 50%;
-  margin: 20px;
-  padding: 20px;
-  overflow: scroll;
+  position: absolute;
+  left: 30%;
+  margin-top: 10%;
+}
+
+#leader_board {
+  color: yellow;
+  font-size: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', sans-serif;
 }
 
 .container_main {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .title {
@@ -19,27 +29,80 @@
   gap: 30px;
 }
 
+.title h2 {
+  color: antiquewhite;
+  font-size: 30px;
+  font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+}
+
+.refresh {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.refresh:hover {
+  background-color: green;
+  font-size: 20px;
+  color: yellow;
+}
+
 .score {
   border: 2px solid black;
+  overflow: scroll;
+  height: 50vh;
+  width: 40vw;
+}
+
+li {
+  font-size: 30px;
+  padding: 10px;
 }
 
 li:nth-child(even) {
-  background-color: #fff;
+  background-color: rgb(205, 151, 5);
 }
 
 li:nth-child(odd) {
-  background-color: #eee;
+  background-color: rgb(146, 37, 1);
 }
 
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: blue;
 }
 
-li p {
-  background-color: aqua;
+.add_your_score {
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.add_your_score h2 {
+  color: #fff;
+  font-family: cursive;
+}
+
+input {
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+::placeholder {
+  font-style: italic;
+  font-size: 15px;
+}
+
+.submit_btn {
+  float: right;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(234, 130, 10);
+}
+
+.submit_btn:hover {
+  background-color: yellow;
+  padding: 12px;
 }
 
 /* End */
