@@ -64,7 +64,6 @@ Give a ⭐️ if you like this project!
 - My morning session team
 - Microverse
 - etc
-
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.

@@ -19,7 +19,7 @@ const scores = async (url, playername, playerscore) => {
     .catch((error) => {
       displayMsg.innerText = `${JSON.stringify(error)}`;
     });
-  render(url)
+  render(url);
 };
 
 export default scores;
