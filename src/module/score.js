@@ -1,3 +1,5 @@
+import render from 'render'
+
 const scores = async (url, playername, playerscore) => {
   const displayMsg = document.querySelector('.message');
   await fetch(url, {
@@ -17,6 +19,7 @@ const scores = async (url, playername, playerscore) => {
     .catch((error) => {
       displayMsg.innerText = `${JSON.stringify(error)}`;
     });
+  render(url)
 };
 
 export default scores;
