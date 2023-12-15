@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <header>
-            <h1 id="leader_board">
+            <h1 id="leader_board" title="LeaderBoard">
                 Leaderboard
             </h1>
         </header>
@@ -22,9 +22,7 @@
                         <button  type="button" class="refresh" >Refresh</button>
                     </div>
                     <div class="score">
-                        <ul id="list_of_players">
-                            <!-- dynamic part -->
-                        </ul>
+                        <ul id="list_of_players"></ul>
                     </div>
                 </div>
                 <div class="add_your_score">
@@ -32,8 +30,8 @@
                     <h2>Add your score</h2>
                    </div>
                    <form>
-                    <input type="text" class = 'your_score'  required  placeholder="your name" name="name"> <br><br>
-                    <input type="number" class = 'your_score'  required  placeholder="your score" name="score"><br><br>
+                    <input type="text" class = 'your_score'  required  placeholder="your name" name="name">
+                    <input type="number" class = 'your_score'  required  placeholder="your score" name="score">
                     <button type = 'submit' class="submit_btn">submit</button>
                     <p class="message"></p>
                    </form>
@@ -45,6 +43,6 @@
         <footer></footer>
         
     </div>
-    <script src="/script.js"></script>
+    <script src="/script.js" defer></script>
 </body>
 </html>
