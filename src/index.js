@@ -2,7 +2,7 @@ import render from './module/render';
 import scores from './module/score';
 import './styles.css';
 
-const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/amavubiGames/scores/';
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/hsdysj646sgdtes/scores/';
 
 const refreshBtn = document.querySelector('.refresh');
 const form = document.querySelector('form');

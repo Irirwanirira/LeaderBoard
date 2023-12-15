@@ -1,25 +1,34 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-image: url(/images/KigaliCityTour.webp);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 .container {
   position: absolute;
-  left: 30%;
-  margin-top: 10%;
+  left: 40%;
+  top:10%;
 }
 
 #leader_board {
-  color: yellow;
+  color: gold;
   font-size: 50px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', sans-serif;
 }
 
 .container_main {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 10px;
 }
 
 .title {
@@ -37,33 +46,31 @@ body {
 
 .refresh {
   padding: 10px;
-  border-radius: 10px;
-}
-
-.refresh:hover {
-  background-color: green;
-  font-size: 20px;
-  color: yellow;
+  border-radius: 15px;
 }
 
 .score {
-  border: 2px solid black;
   overflow: scroll;
   height: 50vh;
-  width: 40vw;
+  width: 50vw;
+  box-shadow: 1px 1px 20px 0px;
 }
 
 li {
   font-size: 30px;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 li:nth-child(even) {
-  background-color: rgb(205, 151, 5);
+  background-color: rgba(61, 3, 3, 0.6);
+  color: silver;
 }
 
 li:nth-child(odd) {
-  background-color: rgb(146, 37, 1);
+  background-color: rgb(46, 37, 37, 0.9);
+  color: silver;
 }
 
 ul {
@@ -74,7 +81,15 @@ ul {
 
 .add_your_score {
   margin-left: 30px;
+  margin-top: 3rem;
   font-size: 20px;
+}
+
+.add_your_score form {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
 }
 
 .add_your_score h2 {
@@ -86,6 +101,9 @@ input {
   font-size: 15px;
   padding: 5px;
   border-radius: 10px;
+  background-color: rgb(211, 209, 209);
+  outline: none;
+  padding: 15px;
 }
 
 ::placeholder {
@@ -95,14 +113,216 @@ input {
 
 .submit_btn {
   float: right;
-  padding: 10px;
+  padding: 17px;
   border-radius: 10px;
-  background-color: rgb(234, 130, 10);
+  background-color: gold;
 }
 
-.submit_btn:hover {
-  background-color: yellow;
-  padding: 12px;
+@media screen and (max-width: 900px) {
+  body {
+    background-image: url(/images/KigaliCityTour.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .container {
+    position: absolute;
+    left: 10%;
+    top: 5%;
+  }
+
+  #leader_board {
+    color: gold;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', sans-serif;
+  }
+
+  .container_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .title h2 {
+    color: antiquewhite;
+    font-size: 20px;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+  }
+
+  .refresh {
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .score {
+    overflow: scroll;
+    height: 50vh;
+    width: 80vw;
+  }
+
+  li {
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 800;
+  }
+
+  li:nth-child(even) {
+    background-color: rgba(61, 3, 3, 0.6);
+    color: silver;
+  }
+
+  li:nth-child(odd) {
+    background-color: rgb(46, 37, 37, 0.9);
+    color: silver;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .add_your_score {
+    align-items: start;
+    margin-top: 1rem;
+    margin-left: -5rem;
+  }
+
+  .add_your_score form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+
+  .add_your_score h2 {
+    color: #fff;
+    font-family: cursive;
+  }
+
+  input {
+    font-size: 15px;
+  }
 }
 
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(/images/KigaliCityTour.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .container {
+    position: absolute;
+    left: 10%;
+    top: 5%;
+  }
+
+  #leader_board {
+    color: gold;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', sans-serif;
+  }
+
+  .container_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .title h2 {
+    color: antiquewhite;
+    font-size: 20px;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+  }
+
+  .refresh {
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .score {
+    overflow: scroll;
+    height: 50vh;
+    width: 80vw;
+  }
+
+  li {
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 800;
+  }
+
+  li span{
+    font-weight: 200;
+  }
+
+  li:nth-child(even) {
+    background-color: rgba(61, 3, 3, 0.6);
+    color: silver;
+  }
+
+  li:nth-child(odd) {
+    background-color: rgb(46, 37, 37, 0.9);
+    color: silver;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .add_your_score {
+    align-items: start;
+    margin-top: 1rem;
+    margin-left: -5rem;
+  }
+
+  .add_your_score form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+
+  .add_your_score h2 {
+    color: #fff;
+    font-family: cursive;
+  }
+
+  input {
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+  }
+
+  .submit_btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: gold;
+  }
+
+}
 /* End */

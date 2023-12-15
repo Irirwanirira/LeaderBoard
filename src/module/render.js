@@ -14,7 +14,7 @@ const render = async (url) => {
   if (errors) {
     displayPlayers.innerText = `${errors}`;
   }
-  const finalResult = newResult.map((resolve) => `<li>${resolve.user}: ${resolve.score}</li>`);
+  const finalResult = newResult.map((resolve) => `<li>${resolve.user}<span>${resolve.score}</span></li>`);
 
   displayPlayers.innerHTML = finalResult.join('');
   return result;

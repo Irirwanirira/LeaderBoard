@@ -1,7 +1,11 @@
 # LeaderBoard
 
 
-**This is a simple website that displays a list of players and their marks, and allows you to add a players and their marks**
+**This website is designed to provide a straightforward and intuitive interface for users to access a comprehensive list of players and their performance marks. Furthermore, it offers the capability to effortlessly add new players and their corresponding marks to the database, ensuring a seamless and efficient user experience.**
+
+![](./images/mobile.png)
+![](./images/tablet.png)
+![](./images/computer.png)
 
 ## Built With
 
@@ -18,6 +22,7 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+- Install node.js
 - Computer
 - Code editor (Vs code)
 
@@ -41,13 +46,11 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-
 👤 **Irirwanirira Joseph**
 
 - GitHub: [@Irirwanirira](https://github.com/Irirwanirira)
 - Twitter: [@Iri_joseph](https://twitter.com/Irirwanirira)
 - LinkedIn: [Joseph IRIRWANIRIRA](https://linkedin.com/in/joseph-irirwanirira-74666623a/)
-
 
 ## 🤝 Contributing
 

@@ -1,4 +1,4 @@
-import render from 'render'
+import render from './render'
 
 const scores = async (url, playername, playerscore) => {
   const displayMsg = document.querySelector('.message');
